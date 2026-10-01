@@ -1,0 +1,36 @@
+name: "Hata Bildirimi (Bug Report)"
+description: "Sistemde veya yazilimda tespit edilen teknik bir hatayi bildirin."
+title: "[HATA] - "
+labels: ["hata", "triyaj"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        T.C. Kastamonu Belediyesi yazilimlarinda karsilastiginiz hatalari ayrintili olarak bildirerek sistemlerimizin iyilesmesine katki sagladiginiz icin tesekkur ederiz.
+        *Not: Eger bir guvenlik acigi bildirmek istiyorsaniz, lutfen SECURITY.md politikamiza bakiniz ve bunu buraya yazmayiniz.*
+  - type: textarea
+    id: ne-oldu
+    attributes:
+      label: Hatali Davranis
+      description: Ne tur bir sorun olustu? Beklenen neydi ve gerceklesen nedir?
+    validations:
+      required: true
+  - type: textarea
+    id: adimlar
+    attributes:
+      label: Hatayi Yeniden Uretme Adimlari
+      description: 1. Adim, 2. Adim vb.
+      placeholder: |
+        1. '...' sayfasina / servisine gidin
+        2. '...' isteginde bulunun
+        3. Hatayi gozlemleyin
+    validations:
+      required: true
+  - type: input
+    id: ortam
+    attributes:
+      label: Ortam Bilgisi
+      description: Tarayici, isletim sistemi, surum veya istemci bilgisi.
+      placeholder: "Ornek: Firefox 120 / Linux / Mobil Istemci v1.2"
+    validations:
+      required: false

@@ -1,0 +1,23 @@
+name: "Ozellik Talebi (Feature Request)"
+description: "Akilli sehir veya kamu projelerimiz icin yeni bir ozellik veya gelistirme onerisinde bulunun."
+title: "[OZELLIK] - "
+labels: ["gelistirme", "fikir"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Kastamonu halkina ve kentsel yonetime fayda saglayacak yenilikci fikirlerinizi bekliyoruz.
+  - type: textarea
+    id: problem
+    attributes:
+      label: Cozulmek Istenen Kentsel veya Teknik Problem
+      description: Bu gelistirme hangi ihtiyaci veya eksikligi karsilamaktadir?
+    validations:
+      required: true
+  - type: textarea
+    id: cozum
+    attributes:
+      label: Onerilen Cozum Yaklasimi
+      description: Bu ozelligin nasil calismasini ve hangi bilesenlerle entegre olmasini oneriyorsunuz?
+    validations:
+      required: true
